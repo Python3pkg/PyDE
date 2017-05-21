@@ -4,7 +4,7 @@ Implements the differential evolution optimization method by Storn & Price
 
 .. moduleauthor:: Hannu Parviainen <hpparvi@gmail.com>
 """
-from __future__ import division 
+ 
 
 import numpy as np
 from numpy.random import random, randint

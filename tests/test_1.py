@@ -1,4 +1,4 @@
-from __future__ import division
+
 from time import time
 
 import numpy as np
@@ -25,11 +25,11 @@ if __name__ == '__main__':
     ## Run n number of generations
     tstart = time()
     res = de.optimize(niter)
-    print((time()-tstart) / niter)
+    print(((time()-tstart) / niter))
     
     ## Or use as an iterator
     for res in de(2):
-        print res
+        print(res)
 
     pl.plot(x,y,'.k')
     pl.plot(x,m(*res[0]),'k')
